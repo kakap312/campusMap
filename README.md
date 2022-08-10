@@ -1,6 +1,7 @@
 # campusMap
 
 
-Stephen please am facing  some challenges with the organization of the layouts
-pls kindly go through the webindex.html file and see if you can rectify the problem.
-Thank you
+This is the API key for the project- AIzaSyCWmbw2LEQJnTKxNBNvyv2-_Sm8lAwb49k
+
+## francis ProjectFile
+Within the campusMap folder is Francis project file with the name maame.zip
