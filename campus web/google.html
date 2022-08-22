@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAMPUS MAP</title>
     <link rel="stylesheet" href="css/style.css">
-    
-    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="heading">
@@ -30,9 +36,11 @@
      <footer>
          <p>Designed by OCHESTRA &copy;2022</p>
      </footer>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWmbw2LEQJnTKxNBNvyv2-_Sm8lAwb49k&callback=initAutocomplete&libraries=places" defer></script>
     <script type="text/javascript">
       function initAutocomplete() {
@@ -46,10 +54,10 @@
         };
         let input = $('#input')[0];
         const uluru = {
-          lat: -25.344,
-          lng: 131.031
+          lat:5.603717,
+          lng: -0.186964  
         };
-        let map = new google.maps.Map($("#mapdisplay")[0], {
+        let map = new google.maps.Map($(".mapdisplay")[0], {
           zoom: 4,
           center: uluru,
         });
@@ -59,10 +67,10 @@
         }); // This marker is used as a pointer on the map
         let infowindow = new google.maps.InfoWindow(); // This window will be attached to a marker and displayed when a user clicks on it
         let autocomplete = new google.maps.places.Autocomplete(input, {
-          types: ['address'], // The map will show exact addresses only 
-          fields: ['place_id', 'geometry', 'address_component', 'formatted_address'], // Results will include limited address components like place ID, coordinates, and formatted address
+          // types: ['address'], // The map will show exact addresses only 
+          // fields: ['place_id', 'geometry', 'address_component', 'formatted_address'], // Results will include limited address components like place ID, coordinates, and formatted address
           componentRestrictions: {
-            country: 'us'
+            country: 'gh'
           } // Limit addresses to USA only
         });
         autocomplete.bindTo('bounds', map);
